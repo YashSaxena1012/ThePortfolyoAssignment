@@ -1,0 +1,96 @@
+@import '../../sass/default/variable';
+
+.st-skill-title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.st-progressbar-wrap {
+  overflow: hidden;
+}
+
+.st-progressbar-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 2px;
+font-family: 'Roboto', sans-serif;
+}
+
+.st-single-progressbar {
+  margin-top: -5px;
+}
+
+.st-progressbar-title {
+font-size: 16px;
+margin-bottom: 0;
+}
+
+.st-imgcontainer{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap:2rem;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 2rem;
+  transition: filter .3s ease;
+}
+
+.group {
+  filter: blur(1px);
+}
+
+.group:hover {
+filter: blur(0px);
+}
+
+.group::not(:hover) {
+filter: blur(2px);
+}
+
+.st-progressbar-percentage {
+color: $base-color1;
+font-weight: 400;
+}
+
+.st-progressbar {
+width: 100%;
+height: 2px;
+background-color: $dark-color5;
+}
+
+.st-progressbar-in {
+background-color: $base-color1;
+height: 2px;
+transition: width 0.3s ease;
+animation: animate1 3s ease 3s;
+}
+
+.skill_img{
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+transition:  .3s ease-in;
+}
+
+.skill_img:hover{
+  transform: scale(1.1);
+}
+
+
+@keyframes animate1 {
+  from {
+    width: 0;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+.st-skill-title {
+  font-size: 28px;
+}
+}
+

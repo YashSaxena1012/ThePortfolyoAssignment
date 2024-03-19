@@ -1,0 +1,41 @@
+@import "../../sass/default/variable";
+
+.modal-title,
+.modal-subtitle {
+  color: $base-color4;
+}
+
+.modal-body img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.st-modal-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.st-modal-buttons{
+  margin-left: 20px;
+}
+.st-live-demo-btn {
+  background-color: #5cb85c; 
+}
+
+.st-github-btn {
+  background-color: #333;
+}
+
+.st-live-demo-btn:hover {
+  color:#5cb85c;
+  background-color: rgb(235, 250, 246);
+  
+}
+
